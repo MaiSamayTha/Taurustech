@@ -430,11 +430,12 @@ html.menu-open { overflow: hidden; }
   .svc__body { gap: 22px; }
 }
 
-/* Desktop: list on the left, detail panel stacked on the right. */
+/* Desktop: list on the left, detail panel stacked on the right.
+   The four rows share the panel's height so both columns line up top and bottom. */
 @media (min-width: 960px) {
   .svc {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: repeat(4, auto) 1fr;
+    grid-template-rows: repeat(4, 1fr);
     column-gap: clamp(24px, 3vw, 40px);
   }
   .svc::before { content: ''; grid-column: 2; grid-row: 1 / -1; background: var(--navy); }
