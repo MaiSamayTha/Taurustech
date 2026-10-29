@@ -52,6 +52,7 @@ svg { flex-shrink: 0; }
 .section--gold { background: var(--gold); color: var(--navy); }
 .section--navy { background: var(--navy); color: var(--cream); }
 .gold { color: var(--gold); }
+.nowrap { white-space: nowrap; }
 
 .h2 {
   margin: 0; font-family: var(--display); font-weight: 400;
@@ -99,11 +100,12 @@ mark { background: var(--cream); color: var(--navy); padding: 0 5px; }
 
 /* ---------- Hero ---------- */
 
-.hero { display: flex; flex-wrap: wrap; }
+/* Raised above the next section so the bull mark can hang over it. */
+.hero { position: relative; z-index: 2; display: flex; flex-wrap: wrap; }
 .hero__main {
   flex: 1.7 1 620px; min-width: 0;
   background: var(--navy); color: var(--cream);
-  padding: clamp(48px, 7vw, 104px) clamp(20px, 4.5vw, 72px) clamp(48px, 6vw, 88px);
+  padding: clamp(48px, 7vw, 104px) var(--pad-x) clamp(48px, 6vw, 88px);
   display: flex; flex-direction: column; justify-content: space-between; gap: 48px;
 }
 .hero__title {
@@ -113,24 +115,30 @@ mark { background: var(--cream); color: var(--navy); padding: 0 5px; }
 .hero__foot { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 28px 48px; }
 .hero__lede { margin: 0; flex: 1 1 340px; max-width: 30em; font-size: clamp(17px, 1.4vw, 20px); line-height: 1.55; color: var(--muted); text-wrap: pretty; }
 
-.hero__side {
-  flex: 1 1 360px; min-width: 0; min-height: clamp(360px, 44vw, 640px);
-  position: relative; overflow: hidden;
-  background: var(--gold); color: var(--navy);
-  padding: clamp(24px, 3vw, 44px);
-  display: flex; flex-direction: column; justify-content: space-between; gap: 24px;
-}
-.hero__mark { position: absolute; width: 125%; right: -30%; bottom: -34%; pointer-events: none; }
-.hero__areas { position: relative; margin: 0; display: flex; flex-direction: column; font-size: 18px; font-weight: 700; line-height: 1.35; }
 .hero__where {
-  position: relative; margin: 0; align-self: flex-start;
-  background: var(--navy); color: var(--cream); padding: 10px 14px; font-size: 15px; font-weight: 600;
+  flex: 1 1 100%; margin: 0; padding-top: 22px;
+  border-top: 1px solid var(--line-dark);
+  font-size: 15px; font-weight: 600; color: #A9B4C4;
+}
+
+.hero__side {
+  --side-pad: clamp(24px, 3vw, 44px);
+  flex: 1 1 360px; min-width: 0; min-height: clamp(380px, 40vw, 620px);
+  background: var(--gold); color: var(--navy);
+  padding: var(--side-pad);
+  display: flex; flex-direction: column; gap: 24px;
+}
+.hero__areas { margin: 0; display: flex; flex-direction: column; font-size: 18px; font-weight: 700; line-height: 1.35; }
+.hero__mark {
+  display: block; flex-shrink: 0; align-self: flex-end; pointer-events: none;
+  width: calc(100% + var(--side-pad)); height: auto;
+  margin-top: auto; margin-right: calc(-1 * var(--side-pad));
+  margin-bottom: clamp(-150px, -9vw, -64px);
 }
 
 @media (max-width: 600px) {
   .hero__foot .btn { width: 100%; justify-content: space-between; }
-  .hero__side { min-height: 300px; }
-  .hero__mark { width: 90%; right: -18%; bottom: -30%; }
+  .hero__side { min-height: 320px; }
 }
 
 /* ---------- Problem picker ---------- */
@@ -274,14 +282,14 @@ mark { background: var(--cream); color: var(--navy); padding: 0 5px; }
 .promise--gold { background: var(--gold); color: var(--navy); }
 .promise--white { background: #FFFFFF; color: var(--navy); }
 .promise--navy2 { background: var(--navy-2); color: var(--cream); }
-.promise__mark { position: absolute; width: 70%; right: -12%; top: -18%; pointer-events: none; }
+.promise__mark { position: absolute; width: 36%; right: -5%; bottom: -9%; pointer-events: none; }
 .promise__big {
   position: relative; margin: 0; font-family: var(--display);
   font-size: clamp(28px, 3.2vw, 48px); line-height: 1.08; letter-spacing: -0.02em; text-wrap: balance;
 }
 .promise__small { position: relative; margin: 0; max-width: 26em; font-size: 17px; line-height: 1.55; }
 .promise--navy .promise__small { color: var(--muted); }
-.promise--gold .promise__small { font-weight: 500; }
+.promise--gold .promise__small { font-weight: 500; max-width: min(26em, 58%); }
 .promise--white .promise__small { color: var(--ink-2); }
 .promise .btn { align-self: flex-start; }
 
