@@ -3,445 +3,356 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Taurus Tech — Consulting for IT Ops, AI &amp; Cloud</title>
-<meta name="description" content="Taurus Tech is a Vancouver-based consultancy for IT operations, AI &amp; analytics, and cloud. A senior consultant leads every engagement, from first conversation to delivery.">
-<meta name="theme-color" content="#0B1626">
+<title>Taurus Tech — IT operations, AI and cloud consulting</title>
+<meta name="description" content="Senior consultants for IT operations, AI and cloud. The person on your first call runs your project to the end. AI handles the legwork; a person makes every decision.">
+<meta name="theme-color" content="#0A1628">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Taurus Tech">
-<meta property="og:title" content="Taurus Tech — Senior-level judgment, delivered at agency scale">
-<meta property="og:description" content="Consulting for IT Ops, AI &amp; Cloud. A senior consultant leads every engagement, from first conversation to delivery.">
+<meta property="og:title" content="Taurus Tech — We don’t hand your project to the B-team">
+<meta property="og:description" content="Senior consultants for IT operations, AI and cloud. The person on your first call runs your project to the end.">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&amp;family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&amp;display=swap">
 <link rel="stylesheet" href="styles.css">
-<script>
-  // Enables the loader + entrance animation. If main.js never runs, fall back to the static page.
-  document.documentElement.classList.add('js');
-  setTimeout(function () { if (!window.TT_READY) document.documentElement.classList.remove('js'); }, 4000);
-</script>
 <script src="main.js" defer></script>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
+<a class="skip-link" href="#top">Skip to content</a>
 
 <div class="page">
 
-  <!-- LOADER -->
-  <div class="loader" data-loader aria-hidden="true">
-    <div class="loader__slats">
-      <div class="loader__slat"></div>
-      <div class="loader__slat" style="--d:60ms"></div>
-      <div class="loader__slat" style="--d:120ms"></div>
-      <div class="loader__slat" style="--d:180ms"></div>
-      <div class="loader__slat" style="--d:240ms"></div>
-    </div>
-    <div class="loader__content">
-      <div class="loader__row">
-        <div class="loader__brand">
-          <svg width="40" height="40" viewBox="0 0 64 64" fill="none">
-            <path data-draw pathLength="100" style="--d:150ms" d="M6 10 C 14 30, 50 30, 58 10" stroke="#0B1626" stroke-width="7" stroke-linecap="round"/>
-            <path data-draw pathLength="100" style="--d:450ms" d="M32 25 L32 58" stroke="#0B1626" stroke-width="7" stroke-linecap="round"/>
-          </svg>
-          <span class="wordmark wordmark--lg">TAURUS<span> TECH</span></span>
-        </div>
-        <span class="loader__city" data-lcity>Vancouver</span>
-      </div>
-      <div class="loader__row loader__row--bottom">
-        <span class="loader__count" data-lcount>000</span>
-        <span class="loader__tag">Consulting for IT Ops, AI &amp; Cloud</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- MOBILE MENU -->
-  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
-    <div class="menu__top">
-      <span class="wordmark">TAURUS<span> TECH</span></span>
-      <button class="menu__close" type="button" data-menu-close>Close <span aria-hidden="true">✕</span></button>
-    </div>
-    <nav class="menu__nav" aria-label="Mobile">
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#why">Why Us</a>
-      <a href="#process">Process</a>
-    </nav>
-    <a class="menu__cta" href="#contact"><span>Book a Strategy Call</span><span aria-hidden="true">↗</span></a>
-  </div>
-
   <!-- HEADER -->
-  <header class="site-header">
-    <div class="container site-header__inner">
-      <a class="brand" href="#home" aria-label="Taurus Tech — home">
-        <svg width="28" height="28" viewBox="0 0 64 64" fill="none" aria-hidden="true">
-          <path d="M6 10 C 14 30, 50 30, 58 10" stroke="#F4F1EA" stroke-width="7" stroke-linecap="round"/>
-          <path d="M32 25 L32 58" stroke="#C9A35B" stroke-width="7" stroke-linecap="round"/>
-        </svg>
-        <span class="wordmark">TAURUS<span> TECH</span></span>
+  <header class="hdr">
+    <div class="hdr__inner">
+      <a class="brand" href="#top">
+        <svg width="32" height="32" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M6 10 C 14 30, 50 30, 58 10" stroke="#F4F1EA" stroke-width="8" stroke-linecap="round"/><path d="M32 25 L32 58" stroke="#C9A35B" stroke-width="8" stroke-linecap="round"/></svg>
+        <span class="brand__name">Taurus Tech</span>
       </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#why">Why Us</a>
-        <a href="#process">Process</a>
+      <nav class="hdr__nav" aria-label="Primary">
+        <div class="hdr__links">
+          <a href="#problems">What we fix</a>
+          <a href="#how">How we work</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <a class="btn btn--gold btn--sm" href="#contact">Book a call</a>
       </nav>
-      <div class="site-header__actions">
-        <a class="header-cta" href="#contact"><span>Book a Strategy Call</span><span aria-hidden="true">↗</span></a>
-        <button class="menu-btn" type="button" aria-controls="menu" aria-expanded="false" data-menu-open>Menu</button>
-      </div>
     </div>
   </header>
 
-  <main id="main">
+  <main id="top">
 
     <!-- HERO -->
-    <section id="home" class="hero" aria-labelledby="hero-title">
-      <div class="container hero__inner">
-        <dl class="hero__meta" data-hero>
-          <div><dt>Practice</dt><dd>Consulting for IT Ops, AI &amp; Cloud</dd></div>
-          <div><dt>Based in</dt><dd>Vancouver, BC</dd></div>
-          <div><dt>Engagements</dt><dd>United States · Canada · UAE</dd></div>
-          <div><dt>Local time</dt><dd class="hero__time"><span class="live-dot" aria-hidden="true"></span><span><span data-tz="America/Vancouver">--:--</span> PT · <span data-tz="Asia/Dubai">--:--</span> GST</span></dd></div>
-        </dl>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__main">
+        <h1 id="hero-title" class="hero__title">We don’t hand your project to the <span class="gold">B‑team.</span></h1>
+        <div class="hero__foot">
+          <p class="hero__lede">Senior consultants for IT operations, AI and cloud. The person on your first call runs your project to the end. AI handles the legwork; a person makes every decision.</p>
+          <a class="btn btn--gold btn--lg" href="#contact">Book a free scoping call
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero__side">
+        <svg class="hero__mark" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M6 10 C 14 30, 50 30, 58 10" stroke="#0A1628" stroke-width="7" stroke-linecap="round"/><path d="M32 25 L32 58" stroke="#0A1628" stroke-width="7" stroke-linecap="round"/></svg>
+        <p class="hero__areas"><span>IT operations</span><span>AI &amp; analytics</span><span>Cloud</span></p>
+        <p class="hero__where">Vancouver · teams in the US, Canada, India &amp; UAE</p>
+      </div>
+    </section>
 
-        <div class="hero__spacer"></div>
+    <!-- PROBLEM PICKER -->
+    <section id="problems" class="section section--cream" aria-labelledby="problems-title">
+      <div class="wrap stack">
+        <div class="head-row">
+          <h2 id="problems-title" class="h2">What’s going wrong?</h2>
+          <p class="head-row__note">Pick the one that sounds most like you. We’ll show you how we’d handle it.</p>
+        </div>
 
-        <h1 class="hero__title" id="hero-title">
-          <span class="sr-only">Senior-level judgment, delivered at agency scale.</span>
-          <span class="hero__lines hero__lines--wide" aria-hidden="true">
-            <span class="hline-wrap hline-wrap--first"><span class="hline" data-fit style="font-size:8vw">Senior-level judgment,</span></span>
-            <span class="hline-wrap hline-wrap--last"><span class="hline" data-fit style="font-size:7.4vw">Delivered at <em>agency scale.</em></span></span>
-          </span>
-          <span class="hero__lines hero__lines--narrow" aria-hidden="true">
-            <span class="hline-wrap"><span class="hline" data-fit style="font-size:15vw">Senior-level</span></span>
-            <span class="hline-wrap"><span class="hline" data-fit style="font-size:15vw">judgment,</span></span>
-            <span class="hline-wrap"><span class="hline" data-fit style="font-size:15vw">delivered at</span></span>
-            <span class="hline-wrap hline-wrap--last"><span class="hline" data-fit style="font-size:12.5vw"><em>agency scale.</em></span></span>
-          </span>
-        </h1>
+        <!-- Desktop: list + sticky detail panel. Mobile: the answer opens under the picked row. -->
+        <div class="pp" data-picker>
+          <div class="pp__list" role="group" aria-label="Common problems">
 
-        <div class="hero__foot" data-hero>
-          <p class="hero__lede">Taurus Tech works with companies across IT operations, AI &amp; analytics, and cloud, scoping each engagement around what actually needs to happen, whether that's one service or several at once. A senior consultant leads every step, from first conversation to delivery.</p>
-          <div class="actions actions--end">
-            <a class="btn btn--ghost" href="#process"><span>See How Engagements Run</span><span aria-hidden="true">→</span></a>
-            <a class="btn btn--gold" href="#contact"><span>Start a Conversation</span><span aria-hidden="true">↗</span></a>
+            <div class="pp__item is-active">
+              <button class="pp__q" type="button" aria-pressed="true">
+                <span>Our cloud bill keeps climbing and nobody can explain why.</span>
+                <svg width="24" height="24" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="#0A1628" stroke-width="1.8" stroke-linecap="square"/></svg>
+              </button>
+              <div class="pp__inline">
+                <div class="pp__head"><span class="pp__label">This is a job for</span><span class="pp__svc">Cloud consulting &amp; implementation</span></div>
+                <p class="pp__what">We map what you’re running and what it costs, cut what you don’t need, and rebuild the parts costing you the most. Then we set up monitoring so it stays fixed.</p>
+                <ul class="pp__get"><li>A cost review with clear recommendations</li><li>The changes made, not just suggested</li><li>Monitoring and alerts your team owns</li><li>A proper handover and runbooks</li></ul>
+                <a class="pp__cta" href="#contact">Talk to us about this</a>
+              </div>
+            </div>
+
+            <div class="pp__item">
+              <button class="pp__q" type="button" aria-pressed="false">
+                <span>We bought AI tools, and nothing about how we work has changed.</span>
+                <svg width="24" height="24" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="#0A1628" stroke-width="1.8" stroke-linecap="square"/></svg>
+              </button>
+              <div class="pp__inline">
+                <div class="pp__head"><span class="pp__label">This is a job for</span><span class="pp__svc">AI implementation &amp; training</span></div>
+                <p class="pp__what">We find the few workflows where AI actually pays off, build them into how your team works, and train your people to run them without us.</p>
+                <ul class="pp__get"><li>A shortlist of workflows worth automating</li><li>Working agentic workflows, reviewed by a person</li><li>Hands-on training for your team</li><li>A weekly update as we go</li></ul>
+                <a class="pp__cta" href="#contact">Talk to us about this</a>
+              </div>
+            </div>
+
+            <div class="pp__item">
+              <button class="pp__q" type="button" aria-pressed="false">
+                <span>We need an offshore team in India that actually performs.</span>
+                <svg width="24" height="24" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="#0A1628" stroke-width="1.8" stroke-linecap="square"/></svg>
+              </button>
+              <div class="pp__inline">
+                <div class="pp__head"><span class="pp__label">This is a job for</span><span class="pp__svc">GCC strategy &amp; setup</span></div>
+                <p class="pp__what">Feasibility, location and entity decisions, hiring, and an operating model with the governance to keep your capability center in India performing after launch. Dubai is next.</p>
+                <ul class="pp__get"><li>A feasibility assessment and business case</li><li>A location and entity plan</li><li>A talent and operating model</li><li>Governance and a ramp-up plan</li></ul>
+                <a class="pp__cta" href="#contact">Talk to us about this</a>
+              </div>
+            </div>
+
+            <div class="pp__item">
+              <button class="pp__q" type="button" aria-pressed="false">
+                <span>We’re launching into a market we don’t know well.</span>
+                <svg width="24" height="24" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="#0A1628" stroke-width="1.8" stroke-linecap="square"/></svg>
+              </button>
+              <div class="pp__inline">
+                <div class="pp__head"><span class="pp__label">This is a job for</span><span class="pp__svc">Go-to-market strategy</span></div>
+                <p class="pp__what">Structured research into the market, your competitors and your buyers, turned into positioning, pricing and a launch plan you can act on.</p>
+                <ul class="pp__get"><li>A market and competitor brief</li><li>Positioning and an ideal customer profile</li><li>A pricing and channel plan</li><li>A launch roadmap</li></ul>
+                <a class="pp__cta" href="#contact">Talk to us about this</a>
+              </div>
+            </div>
+
+            <div class="pp__item">
+              <button class="pp__q" type="button" aria-pressed="false">
+                <span>We need more people this quarter, and skills that stick.</span>
+                <svg width="24" height="24" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="#0A1628" stroke-width="1.8" stroke-linecap="square"/></svg>
+              </button>
+              <div class="pp__inline">
+                <div class="pp__head"><span class="pp__label">This is a job for</span><span class="pp__svc">Staff augmentation &amp; training</span></div>
+                <p class="pp__what">Vetted people placed into your team to add capacity fast, plus training on agentic workflows so your own team keeps the capability.</p>
+                <ul class="pp__get"><li>Vetted talent, placed quickly</li><li>Training on agentic workflows</li><li>Capacity that flexes with the work</li><li>A team that can carry on without us</li></ul>
+                <a class="pp__cta" href="#contact">Talk to us about this</a>
+              </div>
+            </div>
+
+            <div class="pp__item">
+              <button class="pp__q" type="button" aria-pressed="false">
+                <span>We know what to build. We don’t have anyone senior to build it.</span>
+                <svg width="24" height="24" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="#0A1628" stroke-width="1.8" stroke-linecap="square"/></svg>
+              </button>
+              <div class="pp__inline">
+                <div class="pp__head"><span class="pp__label">This is a job for</span><span class="pp__svc">Consulting &amp; implementation</span></div>
+                <p class="pp__what">A senior consultant designs the architecture, builds it alongside your team across IT operations, AI and cloud, and documents everything so it keeps running.</p>
+                <ul class="pp__get"><li>A working system, not a slide deck</li><li>Every output reviewed by a person</li><li>Documentation your team can follow</li><li>A weekly update as we go</li></ul>
+                <a class="pp__cta" href="#contact">Talk to us about this</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="pp__panel" aria-live="polite">
+            <div class="pp__panel-head">
+              <span class="pp__label">This is a job for</span>
+              <h3 data-pp-svc>Cloud consulting &amp; implementation</h3>
+            </div>
+            <p class="pp__panel-what" data-pp-what>We map what you’re running and what it costs, cut what you don’t need, and rebuild the parts costing you the most. Then we set up monitoring so it stays fixed.</p>
+            <div class="pp__panel-get">
+              <span>By the end, you’ll have</span>
+              <ul data-pp-get><li>A cost review with clear recommendations</li><li>The changes made, not just suggested</li><li>Monitoring and alerts your team owns</li><li>A proper handover and runbooks</li></ul>
+            </div>
+            <a class="btn btn--gold" href="#contact">Talk to us about this
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- TICKER -->
-    <div class="ticker" aria-label="Service lines">
-      <div class="ticker__track">
-        <ul class="ticker__group">
-          <li>Consulting &amp; Implementation</li><li>GTM Strategy</li><li>GCC Strategy</li><li>Staff Augmentation &amp; Training</li>
-          <li>Consulting &amp; Implementation</li><li>GTM Strategy</li><li>GCC Strategy</li><li>Staff Augmentation &amp; Training</li>
-        </ul>
-        <ul class="ticker__group" aria-hidden="true">
-          <li>Consulting &amp; Implementation</li><li>GTM Strategy</li><li>GCC Strategy</li><li>Staff Augmentation &amp; Training</li>
-          <li>Consulting &amp; Implementation</li><li>GTM Strategy</li><li>GCC Strategy</li><li>Staff Augmentation &amp; Training</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- SERVICES -->
-    <section id="services" class="section section--cream" aria-labelledby="services-title">
-      <div class="container section__inner">
-        <div class="section-head">
-          <div class="section-head__title">
-            <span class="eyebrow">01 — Capabilities</span>
-            <h2 class="h2" id="services-title">Four service lines.<br><span class="muted">One delivery model.</span></h2>
-          </div>
-          <p class="section-head__lede">Every engagement blends senior judgment with agent-assisted delivery — nothing ships without review.</p>
+    <!-- WEEKLY UPDATE -->
+    <section class="section section--gold" aria-labelledby="friday-title">
+      <div class="wrap friday">
+        <div class="friday__copy">
+          <h2 id="friday-title" class="h2 h2--balance">You’ll never chase us for an update.</h2>
+          <p class="lede">Every week your consultant sends a short, plain-English note: what moved, what’s next, and what we need from you. Here’s an example.</p>
         </div>
 
-        <!-- Desktop: list + detail panel side by side. Mobile: accordion (panel opens under its row). -->
-        <div class="svc" data-svc>
-          <button class="svc__row is-active" type="button" style="--r:1" id="svc-tab-1" aria-controls="svc-panel-1" aria-expanded="true">
-            <span class="svc__num">01</span>
-            <span class="svc__label"><span class="svc__title">Consulting &amp; Implementation</span><span class="svc__tag">Core billable work</span></span>
-            <span class="svc__arrow" aria-hidden="true">→</span>
-          </button>
-          <div class="svc__panel is-active" id="svc-panel-1" role="region" aria-labelledby="svc-tab-1">
-            <div class="svc__top" aria-hidden="true">
-              <div class="pips"><span class="on"></span><span></span><span></span><span></span></div>
-              <span class="svc__count">01 / 04</span>
+        <figure class="mail" aria-label="Example of a weekly update email">
+          <dl class="mail__meta">
+            <dt>From</dt><dd><strong>Your consultant, Taurus Tech</strong></dd>
+            <dt>To</dt><dd>Your project team</dd>
+            <dt>Subject</dt><dd><strong>Week 6: where things stand</strong></dd>
+          </dl>
+          <div class="mail__body">
+            <p>Hi team, good week. The cost review is finished and the new landing zone is about 70% built. Monitoring work starts properly on Monday.</p>
+            <div class="mail__rows">
+              <div class="mail__row"><span class="mail__task">Cloud cost review</span><span class="mail__status">Done</span><span class="mail__bar"><span style="width:100%;background:#0A1628"></span></span></div>
+              <div class="mail__row"><span class="mail__task">Landing zone and network</span><span class="mail__status mail__status--on">On track</span><span class="mail__bar"><span style="width:70%"></span></span></div>
+              <div class="mail__row"><span class="mail__task">Monitoring and alerting</span><span class="mail__status mail__status--on">On track</span><span class="mail__bar"><span style="width:35%"></span></span></div>
+              <div class="mail__row"><span class="mail__task">Runbooks and handover</span><span class="mail__status mail__status--later">Starts week 8</span><span class="mail__bar"></span></div>
             </div>
-            <div class="svc__body">
-              <span class="svc__big" aria-hidden="true">01</span>
-              <div class="svc__text">
-                <h3>Consulting &amp; Implementation</h3>
-                <p>Hands-on architecture, delivery, and execution across IT operations, AI &amp; analytics, and cloud, backed by an agent-assisted review process.</p>
-              </div>
-              <ul class="bullets"><li>Architecture &amp; delivery</li><li>Agent-assisted QA</li><li>Client reporting</li><li>Domain expertise</li></ul>
-              <p class="svc__best"><span>Best for</span>teams that need hands-on delivery, not just a strategy deck.</p>
+            <div class="mail__ask">
+              <strong>One thing I need from you</strong>
+              <span>Sign-off on the reserved-capacity plan by Thursday, so we lock in the savings before the next billing cycle.</span>
             </div>
+            <p>Everything else is on track. Talk Tuesday.</p>
           </div>
-
-          <button class="svc__row" type="button" style="--r:2" id="svc-tab-2" aria-controls="svc-panel-2" aria-expanded="false">
-            <span class="svc__num">02</span>
-            <span class="svc__label"><span class="svc__title">GCC Strategy &amp; Setup</span><span class="svc__tag">Global capability center advisory</span></span>
-            <span class="svc__arrow" aria-hidden="true">→</span>
-          </button>
-          <div class="svc__panel" id="svc-panel-2" role="region" aria-labelledby="svc-tab-2">
-            <div class="svc__top" aria-hidden="true">
-              <div class="pips"><span></span><span class="on"></span><span></span><span></span></div>
-              <span class="svc__count">02 / 04</span>
-            </div>
-            <div class="svc__body">
-              <span class="svc__big" aria-hidden="true">02</span>
-              <div class="svc__text">
-                <h3>GCC Strategy &amp; Setup</h3>
-                <p>Feasibility and setup advisory for offshore global capability centers in India, with Dubai in progress — from location and entity decisions to an operating model that performs.</p>
-              </div>
-              <ul class="bullets"><li>Feasibility assessment</li><li>Location &amp; entity setup</li><li>Talent &amp; operating model</li><li>Governance &amp; ramp-up</li></ul>
-              <p class="svc__best"><span>Best for</span>companies standing up or scaling an offshore capability center.</p>
-            </div>
-          </div>
-
-          <button class="svc__row" type="button" style="--r:3" id="svc-tab-3" aria-controls="svc-panel-3" aria-expanded="false">
-            <span class="svc__num">03</span>
-            <span class="svc__label"><span class="svc__title">GTM Strategy</span><span class="svc__tag">Go-to-market advisory</span></span>
-            <span class="svc__arrow" aria-hidden="true">→</span>
-          </button>
-          <div class="svc__panel" id="svc-panel-3" role="region" aria-labelledby="svc-tab-3">
-            <div class="svc__top" aria-hidden="true">
-              <div class="pips"><span></span><span></span><span class="on"></span><span></span></div>
-              <span class="svc__count">03 / 04</span>
-            </div>
-            <div class="svc__body">
-              <span class="svc__big" aria-hidden="true">03</span>
-              <div class="svc__text">
-                <h3>GTM Strategy</h3>
-                <p>Launch-ready go-to-market plans for new markets and offerings, built on structured market, competitor, and buyer research rather than assumptions.</p>
-              </div>
-              <ul class="bullets"><li>Structured market research</li><li>Positioning &amp; ICP</li><li>Pricing &amp; channels</li><li>Launch roadmap</li></ul>
-              <p class="svc__best"><span>Best for</span>teams entering a new market or launching a new offering.</p>
-            </div>
-          </div>
-
-          <button class="svc__row" type="button" style="--r:4" id="svc-tab-4" aria-controls="svc-panel-4" aria-expanded="false">
-            <span class="svc__num">04</span>
-            <span class="svc__label"><span class="svc__title">Staff Augmentation &amp; Training</span><span class="svc__tag">Capacity &amp; upskilling</span></span>
-            <span class="svc__arrow" aria-hidden="true">→</span>
-          </button>
-          <div class="svc__panel" id="svc-panel-4" role="region" aria-labelledby="svc-tab-4">
-            <div class="svc__top" aria-hidden="true">
-              <div class="pips"><span></span><span></span><span></span><span class="on"></span></div>
-              <span class="svc__count">04 / 04</span>
-            </div>
-            <div class="svc__body">
-              <span class="svc__big" aria-hidden="true">04</span>
-              <div class="svc__text">
-                <h3>Staff Augmentation &amp; Training</h3>
-                <p>Vetted talent placement to add capacity fast, plus hands-on training that brings your existing team up to speed on agentic workflows.</p>
-              </div>
-              <ul class="bullets"><li>Vetted talent placement</li><li>Agentic workflow training</li><li>Flexible capacity</li><li>Team enablement</li></ul>
-              <p class="svc__best"><span>Best for</span>teams that need capacity now and capability that lasts.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHY -->
-    <section id="why" class="section section--cream why" aria-labelledby="why-title">
-      <div class="container section__inner">
-        <div class="why__intro">
-          <div class="section-head__title">
-            <span class="eyebrow">02 — Why Taurus Tech</span>
-            <h2 class="h2" id="why-title">Measured in outcomes,<br><span class="accent">not hours.</span></h2>
-          </div>
-          <p class="why__lead">The engagements we take on are ones where the mandate is non-negotiable — a market that must be entered, a center that must perform, a transformation that must land.</p>
-        </div>
-
-        <div class="pillars">
-          <div class="pillar">
-            <span class="pillar__n" aria-hidden="true">(i)</span>
-            <h3>Senior-led, not junior-staffed</h3>
-            <p>The same person runs your engagement from scope to delivery, every time.</p>
-          </div>
-          <div class="pillar">
-            <span class="pillar__n" aria-hidden="true">(ii)</span>
-            <h3>Operator mindset</h3>
-            <p>We own outcomes, not slide decks, from blueprint through go-live.</p>
-          </div>
-          <div class="pillar">
-            <span class="pillar__n" aria-hidden="true">(iii)</span>
-            <h3>Based in Vancouver, BC</h3>
-            <p>A delivery model built for distributed, remote-friendly engagements.</p>
-          </div>
-        </div>
-
-        <dl class="stats">
-          <div class="stat"><dt class="stat__label">Of US workers freelanced in 2026</dt><dd class="stat__value">39<span>%</span></dd></div>
-          <div class="stat"><dt class="stat__label">YoY growth in AI freelance demand</dt><dd class="stat__value">109<span>%</span></dd></div>
-          <div class="stat"><dt class="stat__label">US IT consulting CAGR, 2024–2032</dt><dd class="stat__value">7.4<span>%</span></dd></div>
-          <div class="stat"><dt class="stat__label">Typical hourly rate range</dt><dd class="stat__value"><span>$</span>175–450</dd></div>
-        </dl>
-
-        <div class="cmp">
-          <div class="cmp__head" aria-hidden="true">
-            <span class="cmp__key"><i>✕</i>Typical outsourced team</span>
-            <span class="cmp__key cmp__key--us"><i>→</i>Taurus Tech</span>
-          </div>
-          <div class="cmp__row">
-            <p class="cmp__them"><i aria-hidden="true">✕</i><span><span class="sr-only">Typical outsourced team: </span>Work gets handed to junior staff after the pitch.</span></p>
-            <p class="cmp__us"><i aria-hidden="true">→</i><span><span class="sr-only">Taurus Tech: </span>The same senior consultant runs your engagement start to finish.</span></p>
-          </div>
-          <div class="cmp__row">
-            <p class="cmp__them"><i aria-hidden="true">✕</i><span><span class="sr-only">Typical outsourced team: </span>Status updates arrive whenever someone gets around to it.</span></p>
-            <p class="cmp__us"><i aria-hidden="true">→</i><span><span class="sr-only">Taurus Tech: </span>Client-facing reporting stays current automatically.</span></p>
-          </div>
-          <div class="cmp__row">
-            <p class="cmp__them"><i aria-hidden="true">✕</i><span><span class="sr-only">Typical outsourced team: </span>You're one account among hundreds.</span></p>
-            <p class="cmp__us"><i aria-hidden="true">→</i><span><span class="sr-only">Taurus Tech: </span>A small number of founding engagements, by design.</span></p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOUNDER -->
-    <section class="founder" aria-labelledby="founder-title" data-quotes>
-      <div class="container founder__inner">
-        <div class="founder__head">
-          <span class="eyebrow">03 — In the founder's words</span>
-          <h2 id="founder-title">Why founding engagements work differently.</h2>
-        </div>
-        <figure class="founder__figure">
-          <div class="quote-track" aria-hidden="true"><span class="quote-bar"></span></div>
-          <div class="quotes">
-            <blockquote class="quote is-active"><span class="qm">“</span>We keep the number of founding engagements small on purpose, so the senior person you meet in the first conversation is the one who delivers.<span class="qm">”</span></blockquote>
-            <blockquote class="quote"><span class="qm">“</span>Agents handle the groundwork; judgment stays with a senior consultant. That is how a focused firm delivers at agency scale without skipping review.<span class="qm">”</span></blockquote>
-          </div>
-          <figcaption>Founder, Taurus Tech</figcaption>
         </figure>
-        <div class="founder__controls">
-          <button class="round-btn" type="button" data-quote-prev aria-label="Previous quote">←</button>
-          <button class="round-btn" type="button" data-quote-next aria-label="Next quote">→</button>
-          <span class="founder__count"><span data-quote-num>01</span> / 02</span>
+      </div>
+    </section>
+
+    <!-- HOW WE WORK -->
+    <section id="how" class="section section--navy" aria-labelledby="how-title">
+      <div class="wrap stack stack--lg">
+        <h2 id="how-title" class="h2 how__title">AI does the legwork. <span class="gold">A person makes every call.</span></h2>
+
+        <div class="how">
+          <div class="how__col">
+            <h3>Research</h3>
+            <div class="how__ai"><span>AI agents</span><span>Gather and structure the market, technical or regulatory groundwork.</span></div>
+            <div class="how__you"><span>Your consultant</span><span>Decides what matters, and turns it into a sourced brief you can use.</span></div>
+          </div>
+          <div class="how__col">
+            <h3>Draft</h3>
+            <div class="how__ai"><span>AI agents</span><span>Assemble proposals, architecture docs and reports in a consistent structure.</span></div>
+            <div class="how__you"><span>Your consultant</span><span>Spends their time on the judgment calls, not on formatting.</span></div>
+          </div>
+          <div class="how__col">
+            <h3>Verify</h3>
+            <div class="how__ai"><span>AI agents</span><span>Check each output against the engagement’s requirements.</span></div>
+            <div class="how__you"><span>Your consultant</span><span>Reviews everything and signs it off. Nothing reaches you unreviewed.</span></div>
+          </div>
+          <div class="how__col">
+            <h3>Deliver</h3>
+            <div class="how__ai"><span>AI agents</span><span>Keep status reporting current as the work moves.</span></div>
+            <div class="how__you"><span>Your consultant</span><span>Hands over the finished work and walks your team through it.</span></div>
+          </div>
+        </div>
+
+        <p class="how__close">The pace of a big agency, with one senior person accountable for every page.</p>
+      </div>
+    </section>
+
+    <!-- PROMISES -->
+    <section class="section--cream" aria-labelledby="promises-title">
+      <div class="wrap promises__head">
+        <h2 id="promises-title" class="h2">What you can hold us to.</h2>
+      </div>
+      <div class="promises">
+        <div class="promise promise--navy">
+          <p class="promise__big">The person on your first call runs your project.</p>
+          <p class="promise__small">Named in your proposal. Not swapped for someone junior once you’ve signed.</p>
+        </div>
+        <div class="promise promise--gold">
+          <svg class="promise__mark" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M6 10 C 14 30, 50 30, 58 10" stroke="#B48E47" stroke-width="7" stroke-linecap="round"/><path d="M32 25 L32 58" stroke="#B48E47" stroke-width="7" stroke-linecap="round"/></svg>
+          <p class="promise__big">Small, on purpose.</p>
+          <p class="promise__small">We take on a short list of clients, so yours gets a senior person’s full attention rather than whatever time is left over.</p>
+        </div>
+        <div class="promise promise--white">
+          <p class="promise__big">Wrong fit? We’ll tell you on the first call.</p>
+          <p class="promise__small">Before you’ve spent anything. Sometimes the honest answer is that you don’t need us yet.</p>
+        </div>
+        <div class="promise promise--navy2">
+          <p class="promise__big">Got a project that can’t go wrong?</p>
+          <a class="btn btn--gold btn--md" href="#contact">Book a free scoping call
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- PROCESS -->
-    <section id="process" class="process" aria-labelledby="process-title" data-steps>
-      <div class="container section__inner">
-        <div class="section-head section-head--solo">
-          <div class="section-head__title">
-            <span class="eyebrow">04 — The method</span>
-            <h2 class="h2" id="process-title">A method in <span class="accent">four steps.</span></h2>
-          </div>
+    <!-- FAQ -->
+    <section id="faq" class="section section--cream" aria-labelledby="faq-title">
+      <div class="wrap faq">
+        <div class="faq__intro">
+          <h2 id="faq-title" class="h2 faq__title">Before you ask.</h2>
+          <p class="head-row__note">Anything else, ask us on the call. That’s what it’s for.</p>
         </div>
-
-        <div class="steps__tabs" role="tablist" aria-label="Method steps">
-          <button class="step-tab is-active" type="button" role="tab" id="step-tab-1" aria-controls="step-panel-1" aria-selected="true">
-            <span class="step-tab__bar" aria-hidden="true"></span>
-            <span class="step-tab__n">01</span>
-            <span class="step-tab__title">Research</span>
-          </button>
-          <button class="step-tab" type="button" role="tab" id="step-tab-2" aria-controls="step-panel-2" aria-selected="false" tabindex="-1">
-            <span class="step-tab__bar" aria-hidden="true"></span>
-            <span class="step-tab__n">02</span>
-            <span class="step-tab__title">Draft</span>
-          </button>
-          <button class="step-tab" type="button" role="tab" id="step-tab-3" aria-controls="step-panel-3" aria-selected="false" tabindex="-1">
-            <span class="step-tab__bar" aria-hidden="true"></span>
-            <span class="step-tab__n">03</span>
-            <span class="step-tab__title">Verify</span>
-          </button>
-          <button class="step-tab" type="button" role="tab" id="step-tab-4" aria-controls="step-panel-4" aria-selected="false" tabindex="-1">
-            <span class="step-tab__bar" aria-hidden="true"></span>
-            <span class="step-tab__n">04</span>
-            <span class="step-tab__title">Deliver &amp; report</span>
-          </button>
-        </div>
-
-        <div class="steps__panels">
-          <div class="step-panel is-active" role="tabpanel" id="step-panel-1" aria-labelledby="step-tab-1">
-            <div class="step-panel__head"><span class="step-panel__n" aria-hidden="true">01</span><h3>Research</h3></div>
-            <div class="step-panel__body">
-              <p>Agents gather and structure the market, technical, or regulatory groundwork an engagement needs, so the first draft starts from evidence, not a blank page.</p>
-              <div class="delivers"><span>Delivers</span><span>A structured research brief with sourced data — not a raw data dump.</span></div>
-            </div>
+        <div class="faq__list" data-faq>
+          <div class="faq__item is-open">
+            <button class="faq__q" type="button" aria-expanded="true" aria-controls="faq-a1" id="faq-q1"><span>What does it cost?</span><span class="faq__sign" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3.5 6l4.5 4.5L12.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></span></button>
+            <div class="faq__a" id="faq-a1" role="region" aria-labelledby="faq-q1"><p>It depends on the scope. After the scoping call you get a written proposal with either a fixed price or a monthly retainer, whichever suits the work. If you publish typical ranges, they go here.</p></div>
           </div>
-          <div class="step-panel" role="tabpanel" id="step-panel-2" aria-labelledby="step-tab-2">
-            <div class="step-panel__head"><span class="step-panel__n" aria-hidden="true">02</span><h3>Draft</h3></div>
-            <div class="step-panel__body">
-              <p>Proposals, architecture docs, and reports are assembled against a consistent structure, freeing consultant time for judgment calls instead of formatting.</p>
-              <div class="delivers"><span>Delivers</span><span>A first-draft proposal, architecture document, or report, ready for review.</span></div>
-            </div>
+          <div class="faq__item">
+            <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a2" id="faq-q2"><span>Who actually does the work?</span><span class="faq__sign" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3.5 6l4.5 4.5L12.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></span></button>
+            <div class="faq__a" id="faq-a2" role="region" aria-labelledby="faq-q2" hidden><p>A senior consultant scopes, runs and delivers your project. AI agents handle research, first drafts and reporting, and that consultant reviews every piece before you see it.</p></div>
           </div>
-          <div class="step-panel" role="tabpanel" id="step-panel-3" aria-labelledby="step-tab-3">
-            <div class="step-panel__head"><span class="step-panel__n" aria-hidden="true">03</span><h3>Verify</h3></div>
-            <div class="step-panel__body">
-              <p>Nothing ships unreviewed. Every agent output is checked against the engagement's actual requirements before a client sees it.</p>
-              <div class="delivers"><span>Delivers</span><span>A reviewed, stress-tested version validated against the engagement's actual requirements.</span></div>
-            </div>
+          <div class="faq__item">
+            <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a3" id="faq-q3"><span>What happens to our data when you use AI?</span><span class="faq__sign" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3.5 6l4.5 4.5L12.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></span></button>
+            <div class="faq__a" id="faq-a3" role="region" aria-labelledby="faq-q3" hidden><p>Add your data and security policy here: which tools you use, where data is stored, and your NDA terms.</p></div>
           </div>
-          <div class="step-panel" role="tabpanel" id="step-panel-4" aria-labelledby="step-tab-4">
-            <div class="step-panel__head"><span class="step-panel__n" aria-hidden="true">04</span><h3>Deliver &amp; report</h3></div>
-            <div class="step-panel__body">
-              <p>Client-facing reporting stays current automatically, so status updates reflect real progress rather than a rushed end-of-week summary.</p>
-              <div class="delivers"><span>Delivers</span><span>The finished artifact, plus a status report the client can act on.</span></div>
-            </div>
+          <div class="faq__item">
+            <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a4" id="faq-q4"><span>Which countries do you work in?</span><span class="faq__sign" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3.5 6l4.5 4.5L12.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></span></button>
+            <div class="faq__a" id="faq-a4" role="region" aria-labelledby="faq-q4" hidden><p>We’re based in Vancouver and work with teams in the United States, Canada, India and the UAE, remotely, and on site when it matters. Our capability center work is focused on India, with Dubai next.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a5" id="faq-q5"><span>How soon can you start?</span><span class="faq__sign" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3.5 6l4.5 4.5L12.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></span></button>
+            <div class="faq__a" id="faq-a5" role="region" aria-labelledby="faq-q5" hidden><p>Add your typical lead time here. We keep the client list short, so get in touch early if you have a deadline.</p></div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="contact" aria-labelledby="contact-title">
-      <div class="contact__card">
-        <div class="container contact__inner">
-          <div class="contact__top">
-            <div class="section-head__title">
-              <span class="eyebrow">05 — Start a conversation</span>
-              <h2 id="contact-title">A small number of founding engagements, by design.</h2>
-            </div>
-            <div class="contact__aside">
-              <p>A senior consultant leads every step, from first conversation to delivery.</p>
-              <div class="actions">
-                <a class="btn btn--navy" href="#contact"><span>Book a Strategy Call</span><span aria-hidden="true">↗</span></a>
-                <a class="btn btn--outline" href="#contact"><span>Start a Conversation</span><span aria-hidden="true">→</span></a>
-              </div>
+    <section id="contact" class="section section--gold" aria-labelledby="contact-title">
+      <div class="wrap contact">
+        <div class="contact__copy">
+          <h2 id="contact-title" class="contact__title">Tell us what’s stuck.</h2>
+          <p class="lede">You’ll hear back within <mark>reply time</mark>. Then a free call with the consultant who’d run your project, and a written proposal with scope, timeline and price. No obligation.</p>
+          <p class="contact__email">Prefer email? <a href="#contact"><mark>your@email</mark></a></p>
+        </div>
+
+        <form class="form" aria-label="Request a scoping call" data-form>
+          <div class="form__grid">
+            <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name"></div>
+            <div class="field"><label for="f-email">Work email</label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+            <div class="field"><label for="f-co">Company</label><input id="f-co" name="company" type="text" autocomplete="organization"></div>
+            <div class="field"><label for="f-country">Where are you based?</label>
+              <select id="f-country" name="country">
+                <option>United States</option><option>Canada</option><option>India</option><option>UAE</option><option>Somewhere else</option>
+              </select>
             </div>
           </div>
-          <dl class="clocks">
-            <div class="clock"><dt>Canada · HQ</dt><dd><span class="clock__city">Vancouver</span><span class="clock__time"><span data-tz="America/Vancouver">--:--</span> <span class="clock__tz">PT</span></span></dd></div>
-            <div class="clock"><dt>Canada</dt><dd><span class="clock__city">Toronto</span><span class="clock__time"><span data-tz="America/Toronto">--:--</span> <span class="clock__tz">ET</span></span></dd></div>
-            <div class="clock"><dt>United States</dt><dd><span class="clock__city">New York</span><span class="clock__time"><span data-tz="America/New_York">--:--</span> <span class="clock__tz">ET</span></span></dd></div>
-            <div class="clock"><dt>United Arab Emirates</dt><dd><span class="clock__city">Dubai</span><span class="clock__time"><span data-tz="Asia/Dubai">--:--</span> <span class="clock__tz">GST</span></span></dd></div>
-          </dl>
-        </div>
+          <fieldset class="chips">
+            <legend>What’s it about? Pick any that apply.</legend>
+            <div class="chips__row">
+              <button type="button" class="chip" aria-pressed="false">Cloud</button>
+              <button type="button" class="chip" aria-pressed="false">AI &amp; analytics</button>
+              <button type="button" class="chip" aria-pressed="false">IT operations</button>
+              <button type="button" class="chip" aria-pressed="false">Offshore center (GCC)</button>
+              <button type="button" class="chip" aria-pressed="false">Go-to-market</button>
+              <button type="button" class="chip" aria-pressed="false">Staffing &amp; training</button>
+            </div>
+          </fieldset>
+          <div class="field"><label for="f-msg">What’s going on? A few sentences is plenty.</label><textarea id="f-msg" name="message" rows="4"></textarea></div>
+          <button type="submit" class="btn btn--navy btn--lg form__submit">Send it over
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
+          </button>
+        </form>
       </div>
     </section>
 
   </main>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__top">
-        <a class="brand" href="#home" aria-label="Taurus Tech — back to top">
-          <svg width="26" height="26" viewBox="0 0 64 64" fill="none" aria-hidden="true">
-            <path d="M6 10 C 14 30, 50 30, 58 10" stroke="#F4F1EA" stroke-width="7" stroke-linecap="round"/>
-            <path d="M32 25 L32 58" stroke="#C9A35B" stroke-width="7" stroke-linecap="round"/>
-          </svg>
-          <span class="wordmark wordmark--sm">TAURUS<span> TECH</span></span>
-        </a>
-        <nav class="footer__nav" aria-label="Footer">
-          <a href="#home">Home</a>
-          <a href="#services">Services</a>
-          <a href="#why">Why Us</a>
-          <a href="#process">Process</a>
+  <footer class="ftr">
+    <div class="ftr__inner">
+      <div class="ftr__top">
+        <p>IT operations, AI and cloud consulting. Based in Vancouver, working with teams across the United States, Canada, India and the UAE.</p>
+        <nav class="ftr__nav" aria-label="Footer">
+          <a href="#problems">What we fix</a>
+          <a href="#how">How we work</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
         </nav>
       </div>
-      <div class="footer__bottom">
-        <span>© 2026 Taurus Tech. BC sole proprietorship — registration in progress.</span>
-        <span>IT Operations · AI &amp; Analytics · Cloud</span>
+      <div class="ftr__mark">
+        <svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M6 10 C 14 30, 50 30, 58 10" stroke="#F4F1EA" stroke-width="8" stroke-linecap="round"/><path d="M32 25 L32 58" stroke="#C9A35B" stroke-width="8" stroke-linecap="round"/></svg>
+        <span>Taurus Tech</span>
       </div>
+      <p class="ftr__legal">© 2026 Taurus Tech. BC sole proprietorship, registration in progress.</p>
     </div>
   </footer>
 
