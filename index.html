@@ -91,7 +91,8 @@
           <circle class="f-sun" data-sun cx="1250" cy="120" r="46"/>
           <circle class="f-moonCut" cx="1266" cy="104" r="28"/>
 
-          <!-- mountains -->
+          <!-- mountains and city, drawn once; mirrored copies carry them past the edges on wide screens -->
+          <g id="tt-land">
           <polygon class="f-far" points="0,410 120,346 220,372 340,280 460,354 560,316 700,228 820,324 940,274 1060,346 1180,262 1300,334 1440,294 1440,600 0,600"/>
           <polygon class="f-snow" points="318,296 340,280 362,296 350,293 340,303 330,293"/>
           <polygon class="f-snow" points="674,248 700,228 726,248 712,244 700,256 688,244"/>
@@ -111,6 +112,11 @@
             <rect x="984" y="412" width="38" height="102"/><rect x="1036" y="438" width="52" height="76"/><rect x="1102" y="392" width="36" height="122"/>
             <rect x="1152" y="428" width="62" height="86"/><rect x="1228" y="406" width="42" height="108"/><rect x="1284" y="448" width="72" height="66"/><rect x="1370" y="420" width="52" height="94"/>
           </g>
+          </g>
+          <use href="#tt-land" transform="scale(-1 1)"/>
+          <use href="#tt-land" transform="translate(2880 0) scale(-1 1)"/>
+          <use href="#tt-land" transform="translate(-2880 0)"/>
+          <use href="#tt-land" transform="translate(2880 0)"/>
 
           <!-- Taurus HQ, Vancouver: a glass office with the bull on its roof -->
           <rect class="f-hq s-roof" x="128" y="382" width="102" height="40" stroke-width="3"/>
@@ -129,8 +135,8 @@
           <path d="M158 350 Q 179 373 200 350 M179 361 V379" stroke="#C9A35B" stroke-width="6" stroke-linecap="round"/>
 
           <!-- ground -->
-          <rect class="f-ground" x="0" y="520" width="1440" height="80"/>
-          <path class="s-street" d="M0 566 H1440" stroke-width="3" stroke-dasharray="24 18"/>
+          <rect class="f-ground" x="-3000" y="520" width="7440" height="80"/>
+          <path class="s-street" d="M-3000 566 H4440" stroke-width="3" stroke-dasharray="24 18"/>
           <text class="f-groundText scene__label" x="175" y="550" text-anchor="middle" font-size="14">Taurus HQ · Vancouver</text>
           <text class="f-groundText scene__label" x="670" y="550" text-anchor="middle" font-size="15">Your office</text>
           <rect class="f-trunk" x="463" y="490" width="6" height="30"/><circle class="f-tree" cx="466" cy="482" r="18"/>

@@ -101,7 +101,17 @@
     form.addEventListener('submit', e => e.preventDefault());
   };
 
+  /* ---------- Phone booking button: tucked away while the hero is on screen ---------- */
+
+  const initDock = () => {
+    const dock = $('.dock');
+    const hero = $('[data-hero]');
+    if (!dock || !hero || !('IntersectionObserver' in window)) return;
+    new IntersectionObserver(([e]) => dock.classList.toggle('is-tucked', e.isIntersecting), { threshold: 0.35 }).observe(hero);
+  };
+
   initHero();
+  initDock();
   initPicker();
   initFaq();
   initForm();
