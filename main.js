@@ -5,43 +5,69 @@
   const $ = (sel, ctx = document) => ctx.querySelector(sel);
   const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
 
+  /* ---------- Hero: lit by Vancouver's time of day ---------- */
+
+  const initHero = () => {
+    const hero = $('[data-hero]');
+    if (!hero) return;
+    const clock = $('[data-clock]', hero);
+    const sun = $('[data-sun]', hero);
+    const buttons = $$('[data-mode-btn]', hero);
+    // Sun (or moon) position per mode; the colours live in CSS.
+    const SUN = { day: [120, 46], dusk: [330, 60], night: [110, 32] };
+    let picked = null;
+    let hour = null;
+
+    const autoMode = () => {
+      if (hour === null) return 'day';
+      if (hour >= 7 && hour < 17) return 'day';
+      if ((hour >= 17 && hour < 20) || (hour >= 5 && hour < 7)) return 'dusk';
+      return 'night';
+    };
+
+    const render = () => {
+      const mode = picked || autoMode();
+      hero.dataset.mode = mode;
+      sun.setAttribute('cy', SUN[mode][0]);
+      sun.setAttribute('r', SUN[mode][1]);
+      buttons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.modeBtn === mode)));
+    };
+
+    const tick = () => {
+      try {
+        const now = new Date();
+        const tz = 'America/Vancouver';
+        clock.textContent = new Intl.DateTimeFormat('en-US', { timeZone: tz, hour: 'numeric', minute: '2-digit' }).format(now);
+        const h = parseInt(new Intl.DateTimeFormat('en-US', { timeZone: tz, hour: 'numeric', hourCycle: 'h23' }).format(now), 10);
+        hour = isNaN(h) ? null : h;
+      } catch (e) { /* keep the daytime scene */ }
+      render();
+    };
+
+    buttons.forEach(b => b.addEventListener('click', () => {
+      picked = b.dataset.modeBtn;
+      render();
+    }));
+
+    tick();
+    setInterval(tick, 30000);
+  };
+
   /* ---------- Problem picker ---------- */
 
   const initPicker = () => {
     const box = $('[data-picker]');
     if (!box) return;
-    const items = $$('.pp__item', box);
-    const panel = $('.pp__panel', box);
-    const desktop = window.matchMedia('(min-width: 861px)');
+    const pickers = $$('[data-pp]', box);
+    const answers = $$('[data-pp-ans]', box);
 
-    // The desktop panel mirrors the picked item's inline answer.
-    const fillPanel = item => {
-      $('[data-pp-svc]', panel).textContent = $('.pp__svc', item).textContent;
-      $('[data-pp-what]', panel).textContent = $('.pp__what', item).textContent;
-      $('[data-pp-get]', panel).innerHTML = $('.pp__get', item).innerHTML;
-      panel.classList.remove('is-swapping');
-      void panel.offsetWidth;
-      panel.classList.add('is-swapping');
-    };
-
-    items.forEach(item => {
-      const btn = $('.pp__q', item);
-      btn.addEventListener('click', () => {
-        if (item.classList.contains('is-active')) return;
-        // On mobile, keep the tapped row where it was when the answer above it closes.
-        const before = desktop.matches ? null : btn.getBoundingClientRect().top;
-        items.forEach(i => {
-          const on = i === item;
-          i.classList.toggle('is-active', on);
-          $('.pp__q', i).setAttribute('aria-pressed', String(on));
-        });
-        fillPanel(item);
-        if (before !== null) {
-          const delta = btn.getBoundingClientRect().top - before;
-          if (delta) window.scrollBy({ top: delta, behavior: 'instant' });
-        }
-      });
-    });
+    // Desktop rows and phone chips share one answer panel.
+    pickers.forEach(btn => btn.addEventListener('click', () => {
+      const id = btn.dataset.pp;
+      pickers.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.pp === id)));
+      // Showing a hidden answer restarts its illustration's animation.
+      answers.forEach(a => { a.hidden = a.dataset.ppAns !== id; });
+    }));
   };
 
   /* ---------- FAQ (one open at a time; tap again to close) ---------- */
@@ -75,6 +101,7 @@
     form.addEventListener('submit', e => e.preventDefault());
   };
 
+  initHero();
   initPicker();
   initFaq();
   initForm();
