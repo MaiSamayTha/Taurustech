@@ -112,21 +112,28 @@
             <rect x="1152" y="428" width="62" height="86"/><rect x="1228" y="406" width="42" height="108"/><rect x="1284" y="448" width="72" height="66"/><rect x="1370" y="420" width="52" height="94"/>
           </g>
 
-          <!-- Taurus HQ, Vancouver -->
-          <polygon class="f-roof" points="100,464 175,424 250,464"/>
-          <rect class="f-hq s-roof" x="110" y="462" width="130" height="58" stroke-width="3"/>
-          <rect class="f-hqWin" x="128" y="478" width="44" height="24"/>
-          <rect class="f-roof" x="192" y="482" width="22" height="38"/>
-          <rect class="f-roof" x="246" y="388" width="3" height="76"/>
-          <rect x="249" y="390" width="34" height="22" fill="#C9A35B" stroke="#0A1628" stroke-width="1.5"/>
-          <path d="M255 395 Q 266 404 277 395 M266 400 V408" stroke="#0A1628" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Taurus HQ, Vancouver: a glass office with the bull on its roof -->
+          <rect class="f-hq s-roof" x="128" y="382" width="102" height="40" stroke-width="3"/>
+          <rect class="f-hq s-roof" x="104" y="420" width="150" height="100" stroke-width="3"/>
+          <g class="f-hqWin">
+            <rect x="138" y="392" width="82" height="20"/>
+            <rect x="114" y="432" width="130" height="18"/>
+            <rect x="114" y="460" width="130" height="18"/>
+            <rect x="114" y="490" width="40" height="16"/>
+            <rect x="204" y="490" width="40" height="16"/>
+          </g>
+          <path class="s-hq" d="M146 432 V450 M179 432 V450 M212 432 V450 M146 460 V478 M179 460 V478 M212 460 V478 M165 392 V412 M193 392 V412 M134 490 V506 M224 490 V506" stroke-width="2.5"/>
+          <rect class="f-roof" x="164" y="488" width="30" height="32"/>
+          <rect class="f-roof" x="98" y="416" width="162" height="6"/>
+          <path class="s-roof" d="M158 350 Q 179 373 200 350 M179 361 V379" stroke-width="11" stroke-linecap="round"/>
+          <path d="M158 350 Q 179 373 200 350 M179 361 V379" stroke="#C9A35B" stroke-width="6" stroke-linecap="round"/>
 
           <!-- ground -->
           <rect class="f-ground" x="0" y="520" width="1440" height="80"/>
           <path class="s-street" d="M0 566 H1440" stroke-width="3" stroke-dasharray="24 18"/>
           <text class="f-groundText scene__label" x="175" y="550" text-anchor="middle" font-size="14">Taurus HQ · Vancouver</text>
-          <text class="f-groundText scene__label" x="670" y="550" text-anchor="middle" font-size="14">Your team, wherever you are</text>
-          <rect class="f-trunk" x="507" y="490" width="6" height="30"/><circle class="f-tree" cx="510" cy="482" r="18"/>
+          <text class="f-groundText scene__label" x="670" y="550" text-anchor="middle" font-size="15">Your office</text>
+          <rect class="f-trunk" x="463" y="490" width="6" height="30"/><circle class="f-tree" cx="466" cy="482" r="18"/>
           <rect class="f-trunk" x="803" y="494" width="6" height="26"/><circle class="f-tree" cx="806" cy="486" r="14"/>
           <rect class="f-trunk" x="987" y="494" width="6" height="26"/><circle class="f-tree" cx="990" cy="484" r="16"/>
 
@@ -140,8 +147,6 @@
           <path class="tt-sign" pathLength="100" d="M842 282 L950 282" stroke="#C9A35B" stroke-width="4"/>
 
           <!-- your office, in cross-section -->
-          <rect x="600" y="216" width="124" height="24" fill="#F4F1EA" stroke="#0A1628" stroke-width="1.5"/>
-          <text class="scene__label" x="662" y="233" text-anchor="middle" fill="#0A1628" font-size="13">Your office</text>
           <rect class="f-wall" x="764" y="196" width="3" height="48"/>
           <rect class="f-interior" x="566" y="254" width="208" height="266"/>
           <rect class="f-lit tt-fl4" x="608" y="254" width="166" height="52"/>
@@ -178,18 +183,6 @@
             <text class="f-label scene__label" x="764" y="443" text-anchor="end" font-size="11">Research</text>
           </g>
 
-          <!-- AI agents doing legwork between floors -->
-          <g class="tt-agentV"><g transform="translate(738 470)">
-            <rect x="-7" y="-6" width="14" height="11" rx="3" fill="#F4F1EA" stroke="#0A1628" stroke-width="1.8"/>
-            <rect x="-11" y="-10" width="22" height="2.5" fill="#0A1628"/>
-            <rect x="-3" y="-2" width="6" height="3" fill="#C9A35B"/>
-          </g></g>
-          <g class="tt-agentV2"><g transform="translate(626 470)">
-            <rect x="-6" y="-5" width="12" height="10" rx="3" fill="#F4F1EA" stroke="#0A1628" stroke-width="1.8"/>
-            <rect x="-10" y="-9" width="20" height="2.5" fill="#0A1628"/>
-            <rect x="-2.5" y="-1.5" width="5" height="3" fill="#C9A35B"/>
-          </g></g>
-
           <!-- the lift, with your consultant inside -->
           <g class="tt-lift">
             <rect class="f-car" x="575" y="488" width="30" height="30" stroke="#C9A35B" stroke-width="2"/>
@@ -204,20 +197,20 @@
 
           <!-- the B-team asks. The answer is no. -->
           <g class="tt-bub1">
-            <rect x="806" y="184" width="142" height="38" rx="10" fill="#FFFFFF" stroke="#0A1628" stroke-width="2"/>
+            <rect x="752" y="184" width="200" height="38" rx="10" fill="#FFFFFF" stroke="#0A1628" stroke-width="2"/>
             <path d="M884 221 L892 238 L900 221" fill="#FFFFFF" stroke="#0A1628" stroke-width="2" stroke-linejoin="round"/>
             <rect x="882" y="216" width="20" height="5" fill="#FFFFFF"/>
-            <text class="scene__label" x="877" y="208" text-anchor="middle" fill="#0A1628" font-size="14">We’ll take it?</text>
+            <text class="scene__label" x="852" y="208" text-anchor="middle" fill="#0A1628" font-size="13">Can we take it from here?</text>
           </g>
           <g class="tt-bub2">
-            <rect x="616" y="326" width="146" height="36" rx="10" fill="#C9A35B" stroke="#0A1628" stroke-width="2"/>
+            <rect x="604" y="326" width="170" height="36" rx="10" fill="#C9A35B" stroke="#0A1628" stroke-width="2"/>
             <path d="M632 361 L612 380 L648 361" fill="#C9A35B" stroke="#0A1628" stroke-width="2" stroke-linejoin="round"/>
             <rect x="630" y="356" width="20" height="5" fill="#C9A35B"/>
-            <text class="scene__label" x="689" y="349" text-anchor="middle" fill="#0A1628" font-size="14">I’ve got this.</text>
+            <text class="scene__label" x="689" y="349" text-anchor="middle" fill="#0A1628" font-size="13">No thanks. I’ll finish it.</text>
           </g>
 
           <!-- forward deployed: dropped in by parachute -->
-          <g class="tt-para"><g transform="translate(650 138)"><g class="tt-sway">
+          <g class="tt-para"><g transform="translate(548 150)"><g class="tt-sway">
             <g class="tt-canopy">
               <path d="M-36 -62 Q 0 -108 36 -62 Z" fill="#C9A35B" stroke="#0A1628" stroke-width="2.5"/>
               <path d="M-12 -62 Q 0 -100 12 -62" stroke="#0A1628" stroke-width="2"/>
@@ -226,12 +219,13 @@
             <rect x="-6" y="-14" width="5" height="14" fill="#0A1628"/><rect x="1" y="-14" width="5" height="14" fill="#0A1628"/>
             <rect x="-8" y="-40" width="16" height="28" rx="4" fill="#C9A35B" stroke="#0A1628" stroke-width="2"/>
             <circle cx="0" cy="-48" r="8" fill="#E2B48A" stroke="#0A1628" stroke-width="2"/>
-            <rect x="14" y="-58" width="120" height="20" rx="10" fill="#0A1628" stroke="#F4F1EA" stroke-width="1"/>
-            <text class="scene__label" x="74" y="-44" text-anchor="middle" fill="#F4F1EA" font-size="11">Senior consultant</text>
-          </g></g></g>
+          </g>
+            <rect x="-62" y="-140" width="124" height="24" rx="12" fill="#0A1628" stroke="#F4F1EA" stroke-width="1.5"/>
+            <text class="scene__label" x="0" y="-123" text-anchor="middle" fill="#F4F1EA" font-size="13">Senior consultant</text>
+          </g></g>
 
           <!-- the floatplane that brings them -->
-          <g class="tt-plane2"><g class="f-plane" transform="translate(0 96) scale(1.3)">
+          <g class="tt-plane2"><g class="f-plane" transform="translate(0 40) scale(1.3)">
             <rect x="0" y="0" width="52" height="10" rx="5"/>
             <polygon points="44,1 56,-13 61,-13 58,4" fill="#C9A35B"/>
             <rect x="14" y="-4" width="26" height="4"/>
@@ -240,6 +234,24 @@
             <rect x="12" y="9" width="2" height="10"/><rect x="34" y="9" width="2" height="10"/>
           </g></g>
         </svg>
+
+        <!-- Narration: one plain sentence per step, so the story reads at a glance -->
+        <div class="captions" aria-hidden="true">
+          <div class="captions__lines">
+            <span class="tt-cap1">We fly in to join your team.</span>
+            <span class="tt-cap2">We work on site, floor by floor.</span>
+            <span class="tt-cap3">The B-team asks to take over. We say no.</span>
+            <span class="tt-cap4">Same senior person, every stage.</span>
+            <span class="tt-cap5">Delivered. Flag on your roof.</span>
+          </div>
+          <div class="captions__bars">
+            <span><span class="tt-pb1"></span></span>
+            <span><span class="tt-pb2"></span></span>
+            <span><span class="tt-pb3"></span></span>
+            <span><span class="tt-pb4"></span></span>
+            <span><span class="tt-pb5"></span></span>
+          </div>
+        </div>
       </div>
 
       <!-- What you just watched -->
@@ -255,7 +267,7 @@
     </div>
 
     <!-- PROBLEM PICKER -->
-    <section id="problems" class="sec sec--cream" aria-labelledby="problems-title">
+    <section id="problems" class="sec sec--morning" aria-labelledby="problems-title">
       <div class="wrap wrap--problems" data-picker>
         <div class="problems__head">
           <h2 id="problems-title" class="h2 tt-reveal">What’s going wrong?</h2>
@@ -426,15 +438,46 @@
           <svg class="tt-bob" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v10M4 9l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
         </a>
       </div>
+      <!-- morning horizon -->
+      <svg class="horizon" aria-hidden="true" viewBox="0 0 1440 140" preserveAspectRatio="xMidYMax slice">
+        <polygon points="0,90 160,60 320,82 520,40 700,74 880,48 1060,80 1240,52 1440,78 1440,140 0,140" fill="#C9D6E0"/>
+        <g fill="#AFC0CF">
+          <rect x="60" y="70" width="40" height="50"/><rect x="106" y="50" width="30" height="70"/><rect x="142" y="84" width="50" height="36"/>
+          <rect x="380" y="60" width="36" height="60"/><rect x="422" y="80" width="60" height="40"/>
+          <rect x="620" y="44" width="28" height="76"/><rect x="654" y="72" width="54" height="48"/><rect x="714" y="58" width="34" height="62"/>
+          <rect x="900" y="58" width="40" height="62"/><rect x="946" y="86" width="60" height="34"/>
+          <rect x="1180" y="50" width="34" height="70"/><rect x="1220" y="76" width="58" height="44"/><rect x="1330" y="64" width="44" height="56"/>
+        </g>
+        <rect x="0" y="118" width="1440" height="22" fill="#E6DCC6"/>
+      </svg>
     </section>
 
-    <!-- THE FRIDAY UPDATE (white, so gold stays special) -->
-    <section id="friday" class="sec sec--white" aria-labelledby="friday-title">
+    <!-- THE FRIDAY UPDATE: Friday, 5pm, over the city -->
+    <section id="friday" class="sec sec--dusk" aria-labelledby="friday-title">
+      <svg class="sec__art" aria-hidden="true" viewBox="0 0 1440 700" preserveAspectRatio="xMidYMax slice">
+        <defs><pattern id="ttwin3" width="14" height="18" patternUnits="userSpaceOnUse"><rect x="4" y="4" width="6" height="8" fill="#E6C887"/></pattern></defs>
+        <circle cx="1080" cy="610" r="96" fill="#F2B45A"/>
+        <polygon points="0,570 180,515 360,550 560,480 760,540 960,490 1160,550 1440,505 1440,700 0,700" fill="#3A4B6E"/>
+        <g fill="#1B2A44">
+          <rect x="40" y="590" width="60" height="110"/><rect x="110" y="548" width="46" height="152"/><rect x="190" y="520" width="56" height="180"/>
+          <rect x="256" y="604" width="70" height="96"/><rect x="430" y="580" width="50" height="120"/><rect x="490" y="612" width="64" height="88"/>
+          <rect x="700" y="596" width="48" height="104"/><rect x="758" y="560" width="40" height="140"/><rect x="1200" y="572" width="54" height="128"/>
+          <rect x="1262" y="612" width="70" height="88"/><rect x="1342" y="586" width="60" height="114"/>
+        </g>
+        <g fill="url(#ttwin3)">
+          <rect x="46" y="598" width="48" height="96"/><rect x="116" y="556" width="34" height="138"/><rect x="196" y="528" width="44" height="166"/>
+          <rect x="262" y="612" width="58" height="82"/><rect x="436" y="588" width="38" height="106"/><rect x="496" y="620" width="52" height="74"/>
+          <rect x="706" y="604" width="36" height="90"/><rect x="764" y="568" width="28" height="126"/><rect x="1206" y="580" width="42" height="114"/>
+          <rect x="1268" y="620" width="58" height="74"/><rect x="1348" y="594" width="48" height="100"/>
+        </g>
+        <path d="M220 560 Q 620 170 1300 175" fill="none" stroke="#F4F1EA" stroke-width="2" stroke-dasharray="6 10" opacity="0.35"/>
+        <g class="tt-paper"><polygon points="16,0 -14,-10 -6,0 -14,10" fill="#F4F1EA"/><path d="M16 0 L-6 0" stroke="#0A1628" stroke-width="1.5"/></g>
+      </svg>
       <div class="wrap friday">
         <div class="friday__copy">
           <h2 id="friday-title" class="h2 h2--friday tt-reveal">You’ll never chase us for an <span class="hl">update.</span></h2>
           <p class="lede">Every week your consultant sends a short, plain-English note: what moved, what’s next, and what we need from you. Here’s an example.</p>
-          <a class="next lg-only" href="#how"><span class="next__label">Next</span>Who does what: AI, or a person
+          <a class="next next--dusk lg-only" href="#how"><span class="next__label">Next</span>Who does what: AI, or a person
             <svg class="tt-bob" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v10M4 9l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
           </a>
         </div>
@@ -463,55 +506,91 @@
       </div>
     </section>
 
-    <!-- HOW WE WORK + PROMISES (one navy chapter) -->
-    <section id="how" class="sec sec--navy" aria-labelledby="how-title">
-      <div class="wrap wrap--stack">
-        <h2 id="how-title" class="h2 h2--how tt-reveal">AI does the legwork. <span class="gold">A person makes every call.</span></h2>
-
-        <div class="stages">
-          <div class="stages__track lg-only" aria-hidden="true"><span class="tt-step"></span></div>
-          <p class="stages__hint sm-only">Swipe through the four stages
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="#C9A35B" stroke-width="2" stroke-linecap="square"/></svg>
-          </p>
-          <div class="swipe" role="list" aria-label="Four stages of an engagement">
-            <div class="stage" role="listitem">
-              <h3>Research</h3>
-              <div class="stage__ai"><span>AI agents</span><span>Gather and structure the market, technical or regulatory groundwork.</span></div>
-              <div class="stage__you"><span>Your consultant</span><span>Decides what matters, and turns it into a sourced brief you can use.</span></div>
-            </div>
-            <div class="stage" role="listitem">
-              <h3>Draft</h3>
-              <div class="stage__ai"><span>AI agents</span><span>Assemble proposals, architecture docs and reports in a consistent structure.</span></div>
-              <div class="stage__you"><span>Your consultant</span><span>Spends their time on the judgment calls, not on formatting.</span></div>
-            </div>
-            <div class="stage" role="listitem">
-              <h3>Verify</h3>
-              <div class="stage__ai"><span>AI agents</span><span>Check each output against the engagement’s requirements.</span></div>
-              <div class="stage__you"><span>Your consultant</span><span>Reviews everything and signs it off. Nothing reaches you unreviewed.</span></div>
-            </div>
-            <div class="stage" role="listitem">
-              <h3>Deliver</h3>
-              <div class="stage__ai"><span>AI agents</span><span>Keep status reporting current as the work moves.</span></div>
-              <div class="stage__you"><span>Your consultant</span><span>Hands over the finished work and walks your team through it.</span></div>
-            </div>
-          </div>
+    <!-- HOW WE WORK: the night shift, inside your project's building -->
+    <section id="how" class="sec sec--night" aria-labelledby="how-title">
+      <svg class="sec__sky" aria-hidden="true" viewBox="0 0 1440 420" preserveAspectRatio="xMidYMin slice">
+        <circle cx="1250" cy="96" r="34" fill="#F4F1EA"/><circle cx="1266" cy="86" r="30" fill="#060E1B"/>
+        <circle class="tt-twinkle" cx="90" cy="60" r="2" fill="#F4F1EA"/>
+        <circle class="tt-twinkle" style="animation-delay:.7s" cx="300" cy="150" r="1.6" fill="#F4F1EA"/>
+        <circle class="tt-twinkle" style="animation-delay:1.3s" cx="520" cy="40" r="2.2" fill="#E6C887"/>
+        <circle class="tt-twinkle" style="animation-delay:.3s" cx="760" cy="120" r="1.5" fill="#F4F1EA"/>
+        <circle class="tt-twinkle" style="animation-delay:1.9s" cx="980" cy="50" r="2" fill="#F4F1EA"/>
+        <circle class="tt-twinkle" style="animation-delay:1.1s" cx="1120" cy="200" r="1.6" fill="#F4F1EA"/>
+        <circle class="tt-twinkle" style="animation-delay:.5s" cx="1380" cy="170" r="2.2" fill="#E6C887"/>
+        <circle class="tt-twinkle" style="animation-delay:2.2s" cx="200" cy="260" r="1.4" fill="#F4F1EA"/>
+      </svg>
+      <div class="wrap how">
+        <div class="how__head">
+          <h2 id="how-title" class="h2 h2--how tt-reveal">AI does the legwork. <span class="gold">A person makes every call.</span></h2>
+          <p>Every engagement works floor by floor. Watch the lift: one senior person rides it all the way to the top.</p>
         </div>
 
-        <!-- Promises, as part of the same chapter -->
+        <!-- The building: one floor per stage, lit as the lift reaches it -->
+        <div class="bldg">
+          <div class="bldg__top">
+            <span class="bldg__tag">Your project</span>
+            <svg width="70" height="78" viewBox="0 0 70 78" fill="none" aria-hidden="true"><rect x="8" y="4" width="4" height="74" fill="#3A4B66"/><g class="tt-flagup"><rect x="12" y="6" width="50" height="32" fill="#C9A35B" stroke="#0A1628" stroke-width="2"/><path d="M22 14 Q 37 26 52 14 M37 20 V32" stroke="#0A1628" stroke-width="3.5" stroke-linecap="round"/></g></svg>
+          </div>
+          <div class="bldg__roof"></div>
+          <div class="bldg__body">
+            <div class="bldg__shaft" aria-hidden="true">
+              <div class="bldg__car tt-car">
+                <svg width="18" height="26" viewBox="0 0 18 26" fill="none"><circle cx="9" cy="6" r="5" fill="#E2B48A" stroke="#0A1628" stroke-width="1.4"/><rect x="2" y="12" width="14" height="14" rx="3" fill="#C9A35B" stroke="#0A1628" stroke-width="1.4"/></svg>
+              </div>
+            </div>
+            <div class="bldg__floors">
+              <div class="floor tt-litX">
+                <h3>Deliver</h3>
+                <p class="floor__ai"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><use href="#tt-bot"/></svg><span><strong>AI agents</strong> keep status reporting current as the work moves.</span></p>
+                <p class="floor__you"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><use href="#tt-person"/></svg><span><strong>Your consultant</strong> hands over the finished work and walks your team through it.</span></p>
+              </div>
+              <div class="floor tt-litV">
+                <h3>Verify</h3>
+                <p class="floor__ai"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><use href="#tt-bot"/></svg><span><strong>AI agents</strong> check each output against the engagement’s requirements.</span></p>
+                <p class="floor__you"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><use href="#tt-person"/></svg><span><strong>Your consultant</strong> reviews everything and signs it off. Nothing reaches you unreviewed.</span></p>
+              </div>
+              <div class="floor tt-litD">
+                <h3>Draft</h3>
+                <p class="floor__ai"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><use href="#tt-bot"/></svg><span><strong>AI agents</strong> assemble proposals, architecture docs and reports in a consistent structure.</span></p>
+                <p class="floor__you"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><use href="#tt-person"/></svg><span><strong>Your consultant</strong> spends their time on the judgment calls, not on formatting.</span></p>
+              </div>
+              <div class="floor tt-litR">
+                <h3>Research</h3>
+                <p class="floor__ai"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><use href="#tt-bot"/></svg><span><strong>AI agents</strong> gather and structure the market, technical or regulatory groundwork.</span></p>
+                <p class="floor__you"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><use href="#tt-person"/></svg><span><strong>Your consultant</strong> decides what matters, and turns it into a sourced brief you can use.</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="bldg__street"></div>
+        </div>
+
+        <!-- Promises, as billboards on the street -->
         <div class="promises">
           <h2 id="promises-title" class="h2 h2--promises tt-reveal">Three things you can hold us to.</h2>
-          <div class="swipe swipe--promises" role="list" aria-label="Our promises">
-            <div class="promise promise--gold tt-reveal" role="listitem">
-              <p class="promise__big">The person on your first call runs your project.</p>
-              <p class="promise__small">Named in your proposal. Never swapped for someone junior.</p>
+          <div class="billboards" role="list" aria-label="Our promises">
+            <div class="billboard tt-reveal" role="listitem">
+              <div class="billboard__face billboard__face--gold">
+                <p class="billboard__big">The person on your first call runs your project.</p>
+                <p class="billboard__small">Named in your proposal. Never swapped for someone junior.</p>
+              </div>
+              <div class="billboard__legs" aria-hidden="true"><span></span><span></span></div>
+              <div class="billboard__ground" aria-hidden="true"></div>
             </div>
-            <div class="promise promise--cream tt-reveal" role="listitem">
-              <p class="promise__big">Small, on purpose.</p>
-              <p class="promise__small">A short client list, so yours gets a senior person’s full attention.</p>
+            <div class="billboard tt-reveal" role="listitem">
+              <div class="billboard__face billboard__face--cream">
+                <p class="billboard__big">Small, on purpose.</p>
+                <p class="billboard__small">A short client list, so yours gets a senior person’s full attention.</p>
+              </div>
+              <div class="billboard__legs" aria-hidden="true"><span></span><span></span></div>
+              <div class="billboard__ground" aria-hidden="true"></div>
             </div>
-            <div class="promise promise--line tt-reveal" role="listitem">
-              <p class="promise__big">Wrong fit? We’ll say so on the first call.</p>
-              <p class="promise__small">Before you’ve spent anything.</p>
+            <div class="billboard tt-reveal" role="listitem">
+              <div class="billboard__face billboard__face--navy">
+                <p class="billboard__big">Wrong fit? We’ll say so on the first call.</p>
+                <p class="billboard__small">Before you’ve spent anything.</p>
+              </div>
+              <div class="billboard__legs" aria-hidden="true"><span></span><span></span></div>
+              <div class="billboard__ground" aria-hidden="true"></div>
             </div>
           </div>
         </div>
@@ -520,6 +599,11 @@
           <svg class="tt-bob" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v10M4 9l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
         </a>
       </div>
+      <!-- Floor icons, drawn once and reused -->
+      <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="tt-bot" viewBox="0 0 22 22"><path d="M11 6V3" stroke="#F4F1EA" stroke-width="1.5"/><circle cx="11" cy="2.5" r="1.6" fill="#C9A35B"/><rect x="4" y="6" width="14" height="12" rx="3" fill="#F4F1EA" stroke="#0A1628" stroke-width="1.5"/><rect x="8" y="10" width="6" height="3" fill="#C9A35B"/></symbol>
+        <symbol id="tt-person" viewBox="0 0 22 22"><circle cx="11" cy="6" r="4" fill="#E2B48A" stroke="#0A1628" stroke-width="1.2"/><rect x="5" y="11" width="12" height="10" rx="3" fill="#C9A35B"/></symbol>
+      </svg>
     </section>
 
     <!-- FAQ -->
@@ -528,6 +612,24 @@
         <div class="faq__intro">
           <h2 id="faq-title" class="h2 h2--faq tt-reveal">Before you ask.</h2>
           <p class="lg-only">Anything else, ask us on the call. That’s what it’s for.</p>
+          <svg class="faq__art lg-only" viewBox="0 0 280 220" fill="none" aria-hidden="true">
+            <rect x="172" y="70" width="90" height="128" fill="#0A1628"/>
+            <rect x="184" y="84" width="16" height="14" fill="#F2DCA6"/><rect x="208" y="84" width="16" height="14" fill="#F2DCA6"/><rect x="232" y="84" width="16" height="14" fill="#33445E"/>
+            <rect x="184" y="110" width="16" height="14" fill="#33445E"/><rect x="208" y="110" width="16" height="14" fill="#F2DCA6"/><rect x="232" y="110" width="16" height="14" fill="#F2DCA6"/>
+            <rect x="184" y="136" width="16" height="14" fill="#F2DCA6"/><rect x="208" y="136" width="16" height="14" fill="#33445E"/><rect x="232" y="136" width="16" height="14" fill="#F2DCA6"/>
+            <rect x="206" y="166" width="22" height="32" fill="#C9A35B"/>
+            <rect x="0" y="196" width="280" height="24" fill="#E6DCC6"/>
+            <path d="M0 196 H280" stroke="#0A1628" stroke-width="3"/>
+            <rect x="80" y="166" width="9" height="30" rx="3" fill="#0A1628"/><rect x="93" y="166" width="9" height="30" rx="3" fill="#0A1628"/>
+            <rect x="74" y="114" width="34" height="56" rx="9" fill="#C9A35B" stroke="#0A1628" stroke-width="3"/>
+            <path d="M106 128 L124 102" stroke="#0A1628" stroke-width="9" stroke-linecap="round"/>
+            <circle cx="91" cy="96" r="14" fill="#E2B48A" stroke="#0A1628" stroke-width="3"/>
+            <path d="M77 94 Q 91 76 105 94 Z" fill="#0A1628"/>
+            <rect x="112" y="18" width="156" height="48" rx="12" fill="#FFFFFF" stroke="#0A1628" stroke-width="3"/>
+            <path d="M136 64 L128 84 L152 64" fill="#FFFFFF" stroke="#0A1628" stroke-width="3" stroke-linejoin="round"/>
+            <rect x="134" y="58" width="20" height="7" fill="#FFFFFF"/>
+            <text class="scene__label" x="190" y="48" text-anchor="middle" fill="#0A1628" font-size="16">Ask me anything.</text>
+          </svg>
         </div>
         <div class="faq__list" data-faq>
           <div class="faq__item is-open">
@@ -551,11 +653,35 @@
     </section>
 
     <!-- CONTACT (the one big gold moment) -->
-    <section id="contact" class="sec sec--gold" aria-labelledby="contact-title">
+    <section id="contact" class="sec sec--sunrise" aria-labelledby="contact-title">
+      <svg class="dockart" aria-hidden="true" viewBox="0 0 1440 300" preserveAspectRatio="xMidYMax slice">
+        <circle cx="300" cy="160" r="70" fill="#FFF1D2"/>
+        <polygon points="0,170 160,120 330,150 520,90 720,140 900,100 1100,150 1300,110 1440,140 1440,300 0,300" fill="#C0914F"/>
+        <polygon points="0,200 240,165 480,190 720,160 960,195 1200,165 1440,185 1440,300 0,300" fill="#9C7240"/>
+        <rect x="0" y="222" width="1440" height="78" fill="#22344F"/>
+        <rect class="tt-shimmer" x="160" y="246" width="80" height="3" fill="#E6C887"/>
+        <rect class="tt-shimmer" style="animation-delay:1.1s" x="420" y="262" width="60" height="3" fill="#E6C887"/>
+        <rect class="tt-shimmer" style="animation-delay:.5s" x="1020" y="252" width="90" height="3" fill="#E6C887"/>
+        <rect class="tt-shimmer" style="animation-delay:1.7s" x="1260" y="270" width="70" height="3" fill="#E6C887"/>
+        <rect x="620" y="216" width="300" height="10" fill="#0A1628"/>
+        <rect x="640" y="226" width="8" height="40" fill="#0A1628"/><rect x="720" y="226" width="8" height="40" fill="#0A1628"/><rect x="800" y="226" width="8" height="40" fill="#0A1628"/><rect x="880" y="226" width="8" height="40" fill="#0A1628"/>
+        <rect x="900" y="166" width="4" height="50" fill="#0A1628"/>
+        <rect x="836" y="144" width="132" height="26" fill="#F4F1EA" stroke="#0A1628" stroke-width="2"/>
+        <text class="scene__label" x="902" y="162" text-anchor="middle" fill="#0A1628" font-size="13">Ready to deploy</text>
+        <g class="tt-bobplane"><g transform="translate(660 180) scale(2)" fill="#0A1628">
+          <rect x="0" y="0" width="52" height="10" rx="5"/>
+          <polygon points="44,1 56,-13 61,-13 58,4" fill="#C9A35B"/>
+          <rect x="14" y="-4" width="26" height="4"/>
+          <rect x="-4" y="-2" width="3" height="14"/>
+          <rect x="4" y="18" width="40" height="3" rx="1.5"/>
+          <rect x="12" y="9" width="2" height="10"/><rect x="34" y="9" width="2" height="10"/>
+        </g></g>
+      </svg>
       <div class="wrap contact">
         <div class="contact__copy">
+          <p class="contact__eyebrow">Bags packed. Floatplane fuelled.</p>
           <h2 id="contact-title" class="h2 h2--contact tt-reveal">Tell us what’s stuck.</h2>
-          <p class="lede">You’ll hear back within <mark>reply time</mark>, then a free call with the consultant who’d run your project. No obligation.</p>
+          <p class="lede">You’ll hear back within <mark>reply time</mark>, then a free call with the consultant who’d fly in. No obligation.</p>
           <p class="contact__email">Prefer email? <a href="#contact"><mark>your@email</mark></a></p>
         </div>
 
