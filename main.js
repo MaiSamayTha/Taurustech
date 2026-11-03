@@ -10,7 +10,6 @@
   const initHero = () => {
     const hero = $('[data-hero]');
     if (!hero) return;
-    const clock = $('[data-clock]', hero);
     const sun = $('[data-sun]', hero);
     const buttons = $$('[data-mode-btn]', hero);
     // Sun (or moon) position per mode; the colours live in CSS.
@@ -37,7 +36,6 @@
       try {
         const now = new Date();
         const tz = 'America/Vancouver';
-        clock.textContent = new Intl.DateTimeFormat('en-US', { timeZone: tz, hour: 'numeric', minute: '2-digit' }).format(now);
         const h = parseInt(new Intl.DateTimeFormat('en-US', { timeZone: tz, hour: 'numeric', hourCycle: 'h23' }).format(now), 10);
         hour = isNaN(h) ? null : h;
       } catch (e) { /* keep the daytime scene */ }
@@ -101,6 +99,47 @@
     form.addEventListener('submit', e => e.preventDefault());
   };
 
+  /* ---------- Friday update: the plane flies to the email, and the email reacts ---------- */
+
+  const initFlight = () => {
+    const sec = $('[data-flight]');
+    if (!sec) return;
+    const wrap = $('.friday', sec);
+    const copy = $('.friday__copy', sec);
+    const mail = $('.mail', sec);
+    const trail = $('[data-flight-trail]', sec);
+    const plane = $('[data-flight-plane]', sec);
+
+    const draw = () => {
+      // offset* ignores the email's scroll-reveal transform, which would throw the landing off.
+      const left = wrap.offsetLeft + mail.offsetLeft;
+      const bottom = wrap.offsetTop + mail.offsetTop + mail.offsetHeight;
+      const copyBottom = copy.offsetTop + copy.offsetHeight;
+      let d;
+      if (mail.offsetTop >= copyBottom) {
+        // Stacked: in from the left, under the email, and up into its bottom edge.
+        const x = left + mail.offsetWidth / 2;
+        const y = (bottom + sec.offsetHeight) / 2;
+        d = `M-20 ${y} Q${x} ${y} ${x} ${bottom}`;
+      } else {
+        // Side by side: low across the skyline, under the copy, into the email's left edge.
+        const y = wrap.offsetTop + Math.max(copyBottom, mail.offsetTop + mail.offsetHeight) + 40;
+        d = `M${wrap.offsetLeft + copy.offsetLeft} ${y} Q${left - 80} ${y} ${left} ${bottom - 40}`;
+      }
+      trail.setAttribute('d', d);
+      plane.style.offsetPath = `path("${d}")`;
+    };
+
+    draw();
+    if ('ResizeObserver' in window) new ResizeObserver(draw).observe(sec);
+
+    // Start the clock when the email is on screen, so nobody walks in halfway through.
+    if ('IntersectionObserver' in window) {
+      sec.classList.add('is-waiting');
+      new IntersectionObserver(([e]) => sec.classList.toggle('is-waiting', !e.isIntersecting), { threshold: 0.35 }).observe(mail);
+    }
+  };
+
   /* ---------- Phone booking button: tucked away while the hero is on screen ---------- */
 
   const initDock = () => {
@@ -113,6 +152,7 @@
   initHero();
   initDock();
   initPicker();
+  initFlight();
   initFaq();
   initForm();
 })();

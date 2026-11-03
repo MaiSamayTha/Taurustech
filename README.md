@@ -8,7 +8,7 @@ A static site with no build step and no dependencies:
 | ------------- | ----------------------------------------- |
 | `index.html`  | Page markup and content                   |
 | `styles.css`  | All styles, including responsive layouts  |
-| `main.js`     | Loader, headline fitting, tabs, clocks    |
+| `main.js`     | Hero scene, picker, flight, FAQ, form     |
 | `favicon.svg` | Browser tab icon                          |
 
 ## Run locally
